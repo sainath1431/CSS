@@ -1,0 +1,49 @@
+/* Universal Selectors */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selectors */
+
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+/* class Selector */
+
+.first-heading{
+    color: blue;
+}
+
+.para1{
+    color: brown;
+    background-color: aquamarine;
+}
+
+.para2{
+    background-color: lightyellow;
+    color: chartreuse;
+    font-size: 15px;
+}
+
+/* ID Selectors */
+
+#red-para{
+    color: red;
+    font-family: cursive;
+}
+
+/* selector list */
+
+.red,.blue,#green,h1,*{
+    padding: 0;
+    margin: 0;
+    border: 2px solid yellowgreen;
+}
+

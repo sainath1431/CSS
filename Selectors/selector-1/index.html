@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CSS | Selectors</title>
+</head>
+<body>
+    <!-- Universal Selectors -->
+    <!-- 
+        i) when we want to apply style on the whole webpage at that time  we use the selectors.
+        ii) By default some padding & margin is provide the browser (system client engine) so that if we want to overwrite it by own set padding & margin by using universal selectors is done.
+        iii) *{
+                margin : 0 ;
+                padding : 0;
+        }
+        This above code is remove the default padding and margin which is provided by browser.
+     -->
+
+     <!-- Element Selector  -->
+     <!--
+        i) If you want to target to html element we can use html element name as element selector.
+        ii) Ex: h1{
+            color  : "Red";
+        } 
+        here h1 is element which use as element selector.
+    -->
+    <h1>My Name Is Sainath Wankhede.</h1><br>
+    <h2>I am Full Stack Web developer.</h2>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta facere omnis ipsa velit similique est veniam corporis aspernatur atque! Reiciendis quis ut consequuntur?</p>
+
+    <!-- class Selector -->
+
+    <!--
+        i) class is an attribute of an element.
+        ii) We can define set of rules of css to style to multiple elements at a time by declaring class selector to element.
+        iii)and multiple class can be defined to single element.
+        iv)it reudces the time and length of code.
+        v) example
+        <p class = "para1 para2"> this is paragraph first. </p> Here single element can declare multiple class 
+        <p class = "para1"> this is paragraph first. </p> here multiple element can defined same class.
+        vi) it access by using (.)
+    -->
+
+    <h1 class="first-heading">Welcome To Pw Skills</h1>
+    
+    <p class = "para1 para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, alias, quidem veniam dicta laudantium voluptate aspernatur incidunt, vitae totam aliquid sunt nisi quasi?</p>
+    
+    <p class = "para1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, alias, quidem veniam dicta laudantium voluptate aspernatur incidunt, vitae totam aliquid sunt nisi quasi?</p>
+
+    <!-- ID Selectors -->
+
+    <!-- 
+        i) It is unique in nature. It works like css class but it has some diffence that is id is unique inside css document but class may or may not be unique.
+        ii)It access by using (#)
+        iii)for exmaple :
+        <p id = "para1">This is first id paragraph </p>
+        #para1{
+            color : "red";
+        }
+    -->
+
+    <p id = "red-para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, architecto!
+    </p>
+
+    <!-- Selector lists -->
+
+    <!-- 
+        i) Here selector list is a list of selectors which are seperated by ","  which apply set of rules to design by using all selectors.
+
+        ii)if we want to apply same set of rules of css by using multiple selectors then this selector list plays an important role.
+
+        iii) for example :
+        .red,.blue, #green,h1,*{
+            margin : 0;
+            padding : 0;
+            border : 2px solid yellow;
+        }
+    -->
+
+    <p class="red">I am red class.</p>
+    <p class="blue">I am blue class.</p>
+    <p id="green">I am green ID</p>
+    <h1>I am most important heading.</h1>
+    
+</body>
+</html>
