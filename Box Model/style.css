@@ -1,0 +1,25 @@
+div{
+    /* apply padding by to four direction at time using four values. first value for top second value for right third value for bottom fourth values for the left. */
+    /* padding: 10px 2px 10px 2px;
+                top  right left bottom
+    */
+
+    /* apply padding four directions at time using two values first value for top and down and second value for left ,right  */
+    /* padding : 10px 2px ;
+                top    right
+                bottom  left
+    */
+
+    /* apply padding for single direction at a time by using single value for specidfied direction.
+        padding-top : 10px //for top
+        padding-right : 10px //for right
+        padding-bottom : 10px //for bottom
+        padding-left : 10px //for left
+    */
+
+    /* above all ways of padding is also applicable for margin also. */
+
+    /* To border show */
+
+    /* border: 2px solid red; */
+}
