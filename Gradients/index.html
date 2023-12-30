@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS : Gradients</title>
+    <style>
+      .gradient {
+        height: 500px;
+
+        /* When gradient property is used then background - image is used to set gradient. */
+
+        /* Linear gradient : A line keep will changing the color. */
+        /* background-image: linear-gradient(to right, red, yellow);  red starts from left yellow ends to the right */
+        /* background-image: linear-gradient(to left, red, yellow); red starts from right yellow ends with left.*/
+        /* background-image: linear-gradient(to top, red, yellow); red starts from bottom yellow ends with top*/
+        /* background-image: linear-gradient(to bottom, red, yellow); red starts from top yellow ends with bottom.*/
+
+        /* Radial Gradient : Color is in the form of shape like(ellipse , circle) first color start from center and last color is outter most color layer. 
+        
+        It is defined bt its center.
+        To create a radial gradient you must also define at least two color stops.
+        By default , shape is ellipse, size is the farthest-corner, and position is centre.*/
+
+        /* background-image: radial-gradient( red, yellow, blue); */
+
+        /* Radial Gradient : color will be repeated inside single shape. (repeated shape inside another shape)*/
+
+        /* background-image: repeating-radial-gradient(
+          red 20%,  //here 20% red 
+          yellow 10%, //here 10% yellow
+          blue 30%  //here 30% blue.
+        ); */
+
+        /* Conic Gradient : while conic gradient spread color in 360 deree start with first color and ends with last color */
+
+        /* without degree define */
+
+        /* background-image: conic-gradient(red, yellow, black); //here starts with red color ends with black in 360 degree three colors are spread in equal area of degree */
+
+        /* With degree */
+
+        /* background-image: conic-gradient(red 210deg, yellow, black); here starts with red and area of degree of red is defined 210 degree so that much area is occupied by red and then remaining area is adjusted by blck and yellow equally. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient"></div>
+  </body>
+</html>
