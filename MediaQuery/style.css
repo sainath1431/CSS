@@ -1,0 +1,69 @@
+body {
+  background-color: red;
+}
+
+div {
+  font-size: x-large;
+  text-align: center;
+}
+
+div::after {
+  content: "Welcome to the demo";
+}
+
+/* Media Query */
+
+/* maximum width is 400px that meanas if width is r400 px or less than 400px following style is applied. */
+
+@media (max-width: 400px) {
+  body {
+    background-color: goldenrod;
+    color: #fff;
+  }
+
+  div::after {
+    content: "Very Small ! ";
+  }
+}
+
+/* In range */
+/* first way */
+@media (min-width: 400px) and (max-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+  div::after {
+    content: "Mid-Size Deveices";
+  }
+}
+
+/* Second Way */
+@media (768px<= width <= 900px) {
+  /* 
+    If Viewport is atleast 768 px
+    then this tyle will apply.
+    */
+  body {
+    background-color: purple;
+  }
+
+  div::after {
+    content: "Woah its working.";gi
+  }
+}
+
+/* Third Way */
+/* Min-width : 900ps it means at means width is atleast 900px or greater thean 900px having device apply below styles. */
+@media (min-width: 900px) {
+  /* 
+    If Viewport is atleast 900px
+    then this tyle will apply.
+    */
+  body {
+    background-color: aquamarine;
+  }
+
+  div::after {
+    content: "Woah its working.";
+  }
+}
