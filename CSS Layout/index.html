@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS: Layouts</title>
+    <style>
+      .float {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        float: left; /*this is float layout.*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+
+        Introduction to CSS layout: 
+        -It is a very important part of web design which alllows the deveoper to position the lelments on a webpage so that web page can be visually appealing and user friendly.
+
+        -In other words, we can say that it is a process of using css to control the position and size of elements on a webpages.
+
+        Benefits of using CSS layouts:
+        i] Better presentation and structure.
+        ii] Better accessibility.
+        iii] Flexible and responsive.
+        iv] Reusability 
+        v] Browser compatibility.
+
+        Types of CSS layouts:
+
+        i]Normal flow
+        ii]float
+        iii] Position
+        iv] flex.
+        v] Grid.
+
+
+        Normal  flow: it is the defaoult layout model in whch elements are rendered in the order they are written in the HTML file.
+                        it is the default and simplest layout model.
+
+    `   Float : 
+        
+        Float property specifies how we can position an element within the container.
+        float is majorly used when we want to align element horizontally next to each other.
+        These are most used properties of float to position the elements : 
+        1)none
+        2) left
+        3) right
+
+        none : This is the default property set on the element which means that the element will not float anywhere  and will be there a according to the normal document flow.
+
+        Left : This property will float (position) the element to the left side of the container, instead of positioning the element with the default layout flow.
+
+        right : This property will float (position ) the element to the right side of the container, instead of positioning the element with the default layout flow.
+
+     -->
+
+    <!-- This is Normal flow example -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- This is Float example. -->
+    <div class="float"></div>
+  </body>
+</html>
