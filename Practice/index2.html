@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice : css</title>
+    <style>
+      .gadient {
+        height: 500px;
+        width: 500px;
+
+        /* background-image: linear-gradient(to bottom, red, green, blue); */
+
+        /* background-image: repeating-radial-gradient(
+          circle,
+          red 10%,
+          green 20%,
+          blue 30%
+        ); */
+        /*
+        background-image: conic-gradient(red 210deg, blue 20deg, green); */
+      }
+      button {
+        background-color: yellow;
+        color: black;
+        height: 50px;
+        width: 300px;
+        transition: width 3s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        /* transition-delay: 3s; */
+      }
+
+      button:hover {
+        background-color: orangered;
+        color: white;
+        width: 100px;
+      }
+
+      div {
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        position: relative;
+        /* animation-name: colorchange;
+        animation-duration: 5s;
+        /* animation-iteration-count: 2; */
+        /* animation-direction: normal;
+        animation-fill-mode: bo; */
+
+        animation: colorchange 5s 1s 1 normal none;
+      }
+
+      #ease {
+        animation-timing-function: ease;
+      }
+
+      #ease-in {
+        animation-timing-function: ease-in;
+      }
+
+      #ease-out {
+        animation-timing-function: ease-out;
+      }
+
+      #linear {
+        animation-timing-function: linear;
+      }
+
+      @keyframes colorchange {
+        /* from {
+          background-color: black;
+          top: 0px;
+          left: 0px;
+        }
+        to {
+          background-color: green;
+          top: 0px;
+          left: 200px;
+        } */
+
+        0% {
+          background-color: black;
+          top: 0px;
+          left: 0px;
+        }
+
+        25% {
+          background-color: red;
+          top: 0px;
+          left: 200px;
+        }
+
+        50% {
+          background-color: yellowgreen;
+          top: 200px;
+          left: 200px;
+        }
+
+        75% {
+          background-color: purple;
+          top: 200px;
+          left: 0px;
+        }
+
+        100% {
+          background-color: pink;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="gadient"></div>
+    <button>ease</button> -->
+
+    <!-- <div>
+      <p title="sainath wankhede is full stack web developer.">
+        sainath Wankhede
+      </p>
+    </div> -->
+
+    <div id="ease">div1</div>
+    <div id="ease-in">div2</div>
+    <div id="ease-out">div3</div>
+    <div id="linear">div4</div>
+  </body>
+</html>
